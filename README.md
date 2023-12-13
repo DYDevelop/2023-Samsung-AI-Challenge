@@ -24,8 +24,6 @@ The official implementation of
 
 [InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions](https://arxiv.org/abs/2211.05778).
 
-[[Paper](https://arxiv.org/abs/2211.05778)]  [[Blog in Chinese](https://zhuanlan.zhihu.com/p/610772005)]
-
 # 2023 Samsung AI Challenge : Camera-Invariant Domain Adaptation
 ### GOAL
 ```
