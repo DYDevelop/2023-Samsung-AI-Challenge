@@ -26,6 +26,9 @@ The official implementation of
 
 [[Paper](https://arxiv.org/abs/2211.05778)]  [[Blog in Chinese](https://zhuanlan.zhihu.com/p/610772005)]
 
+## Segemntation		
+
+
 ## Highlights
 - :thumbsup: **The strongest open-source visual universal backbone model with up to 3 billion parameters**
 - 🏆 **Achieved `90.1% Top1` accuracy in ImageNet, the most accurate among open-source models**
