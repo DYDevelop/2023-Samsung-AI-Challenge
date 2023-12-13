@@ -27,6 +27,7 @@ The official implementation of
 [[Paper](https://arxiv.org/abs/2211.05778)]  [[Blog in Chinese](https://zhuanlan.zhihu.com/p/610772005)]
 
 ## 2023 Samsung AI Challenge : Camera-Invariant Domain Adaptation
+- Train Data to Target Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
 
 
