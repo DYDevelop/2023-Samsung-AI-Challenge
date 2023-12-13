@@ -5,7 +5,7 @@
 # --------------------------------------------------------
 
 import argparse
-import os
+import os, cv2
 import os.path as osp
 import shutil
 import time
@@ -20,6 +20,8 @@ from mmcv.utils import DictAction
 from mmseg.apis import multi_gpu_test, single_gpu_test
 from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
+from glob import glob
+from tqdm.auto import tqdm
 
 import mmcv_custom   # noqa: F401,F403
 import mmseg_custom   # noqa: F401,F403
@@ -263,6 +265,11 @@ def main():
             pre_eval=args.eval is not None and not eval_on_format_results,
             format_only=args.format_only or eval_on_format_results,
             format_args=eval_kwargs)
+        
+    test_imgs = sorted(glob('/home/steven6774/hdd/InternImage/segmentation/data/SamsungDataset/test_image/*'))
+
+    for result, test_img in tqdm(zip(results, test_imgs), total=len(test_imgs), desc='Writing Masks'):
+        cv2.imwrite(os.path.join('/home/steven6774/hdd/InternImage/segmentation/work_dirs/Pred_masks', test_img.split('/')[-1]), result)  
 
     rank, _ = get_dist_info()
     if rank == 0:
