@@ -4,7 +4,7 @@
 # Licensed under The MIT License [see LICENSE for details]
 # --------------------------------------------------------
 _base_ = [
-    '../_base_/models/upernet_r50.py', '../_base_/datasets/cityscapes.py',
+    '../_base_/models/upernet_r50.py', '../_base_/datasets/samsung.py',
     '../_base_/default_runtime.py', '../_base_/schedules/schedule_160k.py'
 ]
 pretrained = 'https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_b_1k_224.pth'
@@ -25,8 +25,8 @@ model = dict(
         with_cp=False,
         out_indices=(0, 1, 2, 3),
         init_cfg=dict(type='Pretrained', checkpoint=pretrained)),
-    decode_head=dict(num_classes=150, in_channels=[112, 224, 448, 896]),
-    auxiliary_head=dict(num_classes=150, in_channels=448),
+    decode_head=dict(num_classes=13, in_channels=[112, 224, 448, 896]),
+    auxiliary_head=dict(num_classes=13, in_channels=448),
     test_cfg=dict(mode='whole')
 )
 optimizer = dict(
