@@ -55,7 +55,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 	1. 기존 이미지에 Fisheye effect Augmentation 적용
 	2. Target 데이터셋에 있는 Background 부분을 라벨링하여 Mask로 만들어옴
 	3. 이를 전처리된 이미지와 합성하여 Target 데어터셋과 흡사한 이미지 생성
-	4. Segmentation 작업으로 Annotation 또한 동일하게 진행해 줌
+	4. Segmentation Dataset 특성상 Annotation 또한 동일하게 진행해 줌
 	-> For Details look at segmentation/augment.py
 	```
 
