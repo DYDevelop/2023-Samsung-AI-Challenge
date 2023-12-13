@@ -26,7 +26,7 @@ The official implementation of
 
 [[Paper](https://arxiv.org/abs/2211.05778)]  [[Blog in Chinese](https://zhuanlan.zhihu.com/p/610772005)]
 
-## 2023 Samsung AI Challenge : Camera-Invariant Domain Adaptation
+# 2023 Samsung AI Challenge : Camera-Invariant Domain Adaptation
 ```
 자율주행은 다양한 센서들을 사용해 주변 상황을 인식하고 이를 바탕으로 차량을 제어하게 됩니다. 
 
