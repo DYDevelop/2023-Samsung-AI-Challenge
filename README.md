@@ -44,7 +44,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
  	또한, Background mask를 덮어씌어 주기 때문에 기존 12개 class에서 Background class를
  	추가해 총 13개의 class로 증강시킴
 
-	# Categories of classes
+	# 총 13개의 Class로 Data 준비
 	CLASSES=('Road', 'Sidewalk', 'Construction', 'Fence', 'Pole',
 		'Traffic_Light', 'Traffic_sign', 'Nature', 'Sky','Person',
 		'Rider', 'Car', 'Background')
