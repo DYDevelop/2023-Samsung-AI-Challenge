@@ -31,44 +31,6 @@ The official implementation of
 - 🏆 **Achieved `90.1% Top1` accuracy in ImageNet, the most accurate among open-source models**
 - 🏆 **Achieved `65.5 mAP` on the COCO benchmark dataset for object detection, the only model that exceeded `65.0 mAP`**
 
-## Related Projects
-### Foundation Models
-- [Uni-Perceiver](https://github.com/fundamentalvision/Uni-Perceiver): A Pre-training unified architecture for generic perception for zero-shot and few-shot tasks
-- [Uni-Perceiver v2](https://arxiv.org/abs/2211.09808): A generalist model for large-scale vision and vision-language tasks
-- [M3I-Pretraining](https://github.com/OpenGVLab/M3I-Pretraining): One-stage pre-training paradigm via maximizing multi-modal mutual information
-
-### Autonomous Driving
-- [BEVFormer](https://github.com/fundamentalvision/BEVFormer): A cutting-edge baseline for camera-based 3D detection
-- [BEVFormer v2](https://arxiv.org/abs/2211.10439):  Adapting modern image backbones to Bird's-Eye-View recognition via perspective supervision
-
-## Application in Challenges
-- [2022 Waymo 3D Camera-Only Detection Challenge](https://waymo.com/open/challenges/2022/3d-camera-only-detection/): BEVFormer++ **Ranks 1st** based on InternImage
-- [nuScenes 3D detection task](https://www.nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera): BEVFormer v2 achieves SOTA performance of 64.8 NDS on nuScenes Camera Only
-- [CVPR 2023 Workshop End-to-End Autonomous Driving](https://opendrivelab.com/e2ead/cvpr23): InternImage supports the baseline of the [3D Occupancy Prediction Challenge](https://opendrivelab.com/AD23Challenge.html#Track3) and [OpenLane Topology Challenge](https://opendrivelab.com/AD23Challenge.html#Track1)
-
-
-## News
-- `Mar 14, 2023`: 🚀 "INTERN-2.5" is released！
-- `Feb 28, 2023`: 🚀 InternImage is accepted to CVPR 2023!
-- `Nov 18, 2022`: 🚀 InternImage-XL merged into [BEVFormer v2](https://arxiv.org/abs/2211.10439) achieves state-of-the-art performance of `63.4 NDS` on nuScenes Camera Only.
-- `Nov 10, 2022`: 🚀 InternImage-H achieves a new record `65.4 mAP` on COCO detection test-dev and `62.9 mIoU` on
-ADE20K, outperforming previous models by a large margin.
-
-## History
-- [ ] Models/APIs for other downstream tasks
-- [ ] Support [CVPR 2023 Workshop on End-to-End Autonomous Driving](https://opendrivelab.com/e2ead/cvpr23), see [here](https://github.com/OpenGVLab/InternImage/tree/master/autonomous_driving)
-- [ ] Support Segment Anything
-- [x] Support extracting intermediate features, see [here](classification/extract_feature.py)
-- [x] Low-cost training with [DeepSpeed](https://github.com/microsoft/DeepSpeed), see [here](https://github.com/OpenGVLab/InternImage/tree/master/classification)
-- [x] Compiling-free .whl package of DCNv3 operator, see [here](https://github.com/OpenGVLab/InternImage/releases/tag/whl_files)
-- [x] InternImage-H(1B)/G(3B)
-- [x] TensorRT inference for classification/detection/segmentation models
-- [x] Classification code of the InternImage series
-- [x] InternImage-T/S/B/L/XL ImageNet-1K pretrained model
-- [x] InternImage-L/XL ImageNet-22K pretrained model
-- [x] InternImage-T/S/B/L/XL detection and instance segmentation model
-- [x] InternImage-T/S/B/L/XL semantic segmentation model
-
 ## Introduction
 "INTERN-2.5" is a powerful multimodal multitask general model jointly released by SenseTime and Shanghai AI Laboratory. It consists of large-scale vision foundation model "InternImage", pre-training method "M3I-Pretraining", generic decoder "Uni-Perceiver" series, and generic encoder for autonomous driving perception "BEVFormer" series.
 
