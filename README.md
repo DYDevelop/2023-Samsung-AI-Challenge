@@ -36,7 +36,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 왜곡된 이미지(Target Domain)에 대해서도 고성능의 이미지 분할(Semantic Segmentation)을 수행하는 AI 알고리즘 개발을 제안합니다.
 ```
 ### Look in to Data
-- Train Data and Target Data
+- **Train Data and Target Data**
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7c1c97d4-7b59-4d92-be76-a00571c93749)
 	```python
 	데이터셋에 왜곡이 없고 라벨링 된 이미지와 실제로 원하는 왜곡된 이미지가 존재.
@@ -49,7 +49,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 		'Traffic_Light', 'Traffic_sign', 'Nature', 'Sky','Person',
 		'Rider', 'Car', 'Background')
 	```
-- Train Data and Augmented Data
+- **Train Data and Augmented Data**
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ea8074f0-e951-4be5-beaa-604453ef9ed4)
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7062457b-2e9d-4409-ada7-a7f6d7fc5b8a)
@@ -65,7 +65,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 	```
 
 ### After Data Preparation
-- Trainig Code (RTX 3090 * 2 == 48G)
+- **Trainig Code (RTX 3090 * 2 == 48G)**
 	```bash
  	# Trining from the first iter
  	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
@@ -73,7 +73,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
  	# Resume Training
 	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2 --resume-from work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth
 	```
-- Inference Code (RTX 3090 * 1 == 24G)
+- **Inference Code (RTX 3090 * 1 == 24G)**
 	```bash
 	# Inference on Test Dataset with visualization and saving pred masks
 	python test.py work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py \
@@ -82,7 +82,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
     기존 test.py는 vidualization과 pickle format 파일만 만들 수 있었지만 대회에 제출을 하기 위해서는 Pred Masks가 필요해
     기존 코드 수정하여 /work_dirs/Pred_masks 폴더에 Pred한 Masks를 저장도록 만듦
     
-- Submission (CPU)
+- **Submission (CPU)**
 	```bash
 	# To make an csv file for Submission
 	python submit.py
