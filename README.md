@@ -32,7 +32,13 @@ The official implementation of
 왜곡된 이미지(Target Domain)에 대해서도 고성능의 이미지 분할(Semantic Segmentation)을 수행하는 AI 알고리즘 개발을 제안합니다.
 ```
 
-- Train Data to Target Data
+- Train Data and Target Data
+![image](https://github.com/DYDevelop/InternImage/assets/55197580/7c1c97d4-7b59-4d92-be76-a00571c93749)
+```
+데이터 셋에 왜곡이 없고 라벨링된 이미지와 실제로 원하는 왜곡된 이미지가 존재.</br>
+따라서 왜곡 없는 데이터 셋을 왜곡 시켜 Target 이미지와 최대한 비슷하게 만들어주자.
+```
+- Train Data and Augmented Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
 
 
