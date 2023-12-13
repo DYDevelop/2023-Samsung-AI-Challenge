@@ -28,7 +28,7 @@ The official implementation of
 
 ## 2023 Samsung AI Challenge : Camera-Invariant Domain Adaptation
 ```
-따라서 본 대회에서는 왜곡이 존재하지 않는 이미지(Source Domain)와 레이블을 활용하여, 
+본 대회에서는 왜곡이 존재하지 않는 이미지(Source Domain)와 레이블을 활용하여, 
 왜곡된 이미지(Target Domain)에 대해서도 고성능의 이미지 분할(Semantic Segmentation)을 수행하는 AI 알고리즘 개발을 제안합니다.
 ```
 
