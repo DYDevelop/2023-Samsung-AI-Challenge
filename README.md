@@ -38,7 +38,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 ### Look in to Data
 - Train Data and Target Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7c1c97d4-7b59-4d92-be76-a00571c93749)
-	```python
+	```json
 	데이터셋에 왜곡이 없고 라벨링 된 이미지와 실제로 원하는 왜곡된 이미지가 존재.
 	따라서 왜곡 없는 데이터 셋을 왜곡 시켜 Target 이미지와 최대한 비슷하게 만들어주자.
  	또한, Background mask를 덮어씌어 주기 때문에 기존 12개 class에서 Background class를
@@ -66,7 +66,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 
 ### After Data Preparation
 - Trainig Code (RTX 3090 * 2 == 48G)
-	```ruby
+	```bash
  	# Trining from the first iter
  	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
 
