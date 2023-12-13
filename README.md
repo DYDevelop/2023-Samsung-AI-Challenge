@@ -60,7 +60,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 	```
 
 ### After Data Preparation
-- Trainig Code
+- Trainig Code (RTX 3090 * 2)
 	```python
  	# Trining from the first iter
  	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
