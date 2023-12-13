@@ -64,8 +64,17 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 ### After Data Preparation
 - Trainig Code
 	```
-	데이터셋에 왜곡이 없고 라벨링된 이미지와 실제로 원하는 왜곡된 이미지가 존재.
-	따라서 왜곡 없는 데이터 셋을 왜곡 시켜 Target 이미지와 최대한 비슷하게 만들어주자.
+ 	# Trining from the first iter
+ 	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
+
+ 	# Resume Training
+	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2 --resume-from work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth
+	```
+ - Inference Code
+   	```
+ 	# Inference on Test Dataset with visualization and saving pred masks
+ 	python test.py work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py \
+    	work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth --show-dir visualization --out work_dirs/format_results
 	```
 
 
