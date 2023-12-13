@@ -47,6 +47,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 ```
 - Train Data and Augmented Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
+![image](https://github.com/DYDevelop/InternImage/assets/55197580/7062457b-2e9d-4409-ada7-a7f6d7fc5b8a)
 ```
 Target 데이터셋에 존재하는 이미지 주변의 Background를 Mask로 따와서 이를 Fisheye 전처리를 한 이미지에 덮어씌워 줌.
 
