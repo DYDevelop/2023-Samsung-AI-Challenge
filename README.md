@@ -82,7 +82,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
     기존 test.py는 vidualization과 pickle format 파일만 만들 수 있었지만 대회에 제출을 하기 위해서는 Pred Masks가 필요해
     기존 코드 수정하여 /work_dirs/Pred_masks 폴더에 Pred한 Masks를 저장도록 만듦
     
-- Submission
+- Submission (CPU)
 	```bash
 	# To make an csv file for Submission
 	python submit.py
