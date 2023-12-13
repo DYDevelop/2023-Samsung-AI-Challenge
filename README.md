@@ -36,7 +36,8 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 왜곡된 이미지(Target Domain)에 대해서도 고성능의 이미지 분할(Semantic Segmentation)을 수행하는 AI 알고리즘 개발을 제안합니다.
 ```
 ### Look in to Data
-- **Train Data and Target Data**<br>
+- **Train Data and Target Data**
+<br>
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7c1c97d4-7b59-4d92-be76-a00571c93749)
 	```python
 	데이터셋에 왜곡이 없고 라벨링 된 이미지와 실제로 원하는 왜곡된 이미지가 존재.
@@ -50,6 +51,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 		'Rider', 'Car', 'Background')
 	```
 - **Train Data and Augmented Data**
+<br>
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ea8074f0-e951-4be5-beaa-604453ef9ed4)
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7062457b-2e9d-4409-ada7-a7f6d7fc5b8a)
