@@ -66,7 +66,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 
 ### After Data Preparation
 - Trainig Code (RTX 3090 * 2 == 48G)
-	```python
+	```bash
  	# Trining from the first iter
  	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
 
@@ -74,7 +74,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2 --resume-from work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth
 	```
 - Inference Code (RTX 3090 * 1 == 24G)
-	```python
+	```bash
 	# Inference on Test Dataset with visualization and saving pred masks
 	python test.py work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py \
 	work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth --show-dir visualization
@@ -83,7 +83,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
     기존 코드 수정하여 /work_dirs/Pred_masks 폴더에 Pred한 Masks를 저장도록 만듦
     
 - Submission
-	```python
+	```bash
 	# To make an csv file for Submission
 	python submit.py
 	```
