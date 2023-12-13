@@ -60,7 +60,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
 	```
 
 ### After Data Preparation
-- Trainig Code (RTX 3090 * 2)
+- Trainig Code (RTX 3090 * 2 == 48G)
 	```python
  	# Trining from the first iter
  	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2
@@ -68,7 +68,7 @@ Unsupervised Domain Adaptation 기술을 광범위하게 적용해왔습니다.
  	# Resume Training
 	bash dist_train.sh configs/cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py 2 --resume-from work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/latest.pth
 	```
-- Inference Code (RTX 3090 * 1)
+- Inference Code (RTX 3090 * 1 == 24G)
 	```python
 	# Inference on Test Dataset with visualization and saving pred masks
 	python test.py work_dirs/upernet_internimage_b_512x1024_160k_cityscapes/upernet_internimage_b_512x1024_160k_cityscapes.py \
