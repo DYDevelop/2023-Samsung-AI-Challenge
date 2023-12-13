@@ -35,11 +35,18 @@ The official implementation of
 - Train Data and Target Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/7c1c97d4-7b59-4d92-be76-a00571c93749)
 ```
-데이터 셋에 왜곡이 없고 라벨링된 이미지와 실제로 원하는 왜곡된 이미지가 존재.</br>
+데이터셋에 왜곡이 없고 라벨링된 이미지와 실제로 원하는 왜곡된 이미지가 존재.</br>
 따라서 왜곡 없는 데이터 셋을 왜곡 시켜 Target 이미지와 최대한 비슷하게 만들어주자.
 ```
 - Train Data and Augmented Data
 ![image](https://github.com/DYDevelop/InternImage/assets/55197580/ce614a76-9448-4d9e-95d5-f6e787587e9a)
+```
+Target 데이터셋에 존재하는 이미지 주변의 Background를 Mask로 따와서 이를 Fisheye 전처리를 한 이미지에 덮어씌워 줌.</br>
+1. 기존 이미지에 Fisheye effect Augmentation 적용
+2. Target 데이터셋에 있는 Background 부분을 라벨링하여 Mask로 만들어옴
+3. 이를 전처리된 이미지와 합성하여 Target 데어터셋과 흡사한 이미지 생성
+4. Segmentation 작업으로 Annotation 또한 동일하게 진행해 줌
+```
 
 
 
