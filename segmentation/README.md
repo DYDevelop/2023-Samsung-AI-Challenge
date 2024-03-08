@@ -28,8 +28,7 @@ conda activate internimage
 
 For examples, to install torch==1.11 with CUDA==11.3 and nvcc:
 ```bash
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch -y
-conda install -c conda-forge cudatoolkit-dev=11.3 -y # to install nvcc
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia # must be torch < 2.1.0
 ```
 
 - Install other requirements:
