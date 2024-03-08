@@ -18,7 +18,7 @@ cd InternImage
 - Create a conda virtual environment and activate it:
 
 ```bash
-conda create -n internimage python=3.7 -y
+conda create -n internimage python=3.8 -y
 conda activate internimage
 ```
 
